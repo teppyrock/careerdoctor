@@ -1,0 +1,164 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+Careerdoctor_website_structure_v1
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="png_1.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	if( (parent.isSVG) || 
+		(parent.isVML && parent.vmlSupported) || 
+		(parent.isXAML && parent.isUpLevel)) 
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+<script type="text/javascript" language="javascript">
+var pageID = 5;
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 4.480709;
+	viewMgr.visBBoxRight = 10.753472;
+	viewMgr.visBBoxBottom = 0.246528;
+	viewMgr.visBBoxTop = 6.789829;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="Shows the location of the selected shape" src="arrow.png"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+<style type="text/css"> 
+body {
+	background:url(foo) fixed;
+	padding: 10px;
+}
+div.banner {
+	position: fixed;
+	_position: absolute;
+	top: 0;
+	left: 0;
+	_top: expression(eval(document.body.scrollTop));
+	_left: expression(eval(document.body.scrollLeft));
+	width: 100%;
+	_width: expression(eval(document.body.clientWidth));
+	margin: 0;
+	padding: 3px;
+	padding-left: 6px;
+	background:lime;
+	background-color: #FFFFC6;
+	font: 11px tahoma,arial,serif;
+	border-bottom: 2px ridge #FFFFC6;
+}
+</style>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF" style="margin: 0px">
+
+<script type="text/javascript" language="javascript">
+// Displays the banner prompt to install Silverlight
+if (parent.slSupported && !parent.slInstalled)
+{
+	var slBanner = document.createElement("div");
+	slBanner.className = "banner";
+	slBanner.innerHTML = 'To enable full functionality such as Pan and Zoom, <a href="https://www.microsoft.com/silverlight/resources/install.aspx" target="parent">click here</a> to install the Silverlight plug-in.';
+
+	document.body.appendChild(slBanner);
+	document.body.style.paddingTop = "2.5em";
+}
+</script>
+
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+<DIV id="RasterDiv" style="margin:10px">
+
+<center>
+  <IMG id="ConvertedImage" SRC="png_3.png" ALT="Login" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="Back" origTitle="Back" TITLE="Back" HREF="png_1.htm" target="frmDrawing" COORDS="633,767,721,767,727,766,731,763,734,758,736,753,736,723,734,718,731,713,727,710,721,709,633,709,627,710,623,713,619,718,618,723,618,753,619,758,623,763,627,766,633,767" onmouseover="UpdateTooltip(this,5,30,event)" onfocus="UpdateTooltip(this,5,30,event)" onclick="return OnShapeClick(5,30,event);" onkeyup="OnShapeKey(5,30,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Login form" origTitle="Login form" TITLE="Login form"  target="_top" COORDS="19,558,19,574,205,574,205,392,194,392,194,387,18,387,18,558,19,558" onmouseover="UpdateTooltip(this,5,16,event)" onfocus="UpdateTooltip(this,5,16,event)" onclick="return OnShapeClick(5,16,event);" onkeyup="OnShapeKey(5,16,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Login form" origTitle="Login form" TITLE="Login form"  target="_top" COORDS="83,574,83,592,140,592,140,574,83,574" onmouseover="UpdateTooltip(this,5,16,event)" onfocus="UpdateTooltip(this,5,16,event)" onclick="return OnShapeClick(5,16,event);" onkeyup="OnShapeKey(5,16,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Register form" origTitle="Register form" TITLE="Register form"  target="_top" COORDS="19,326,19,343,205,343,205,161,194,161,194,155,18,155,18,326,19,326" onmouseover="UpdateTooltip(this,5,1,event)" onfocus="UpdateTooltip(this,5,1,event)" onclick="return OnShapeClick(5,1,event);" onkeyup="OnShapeKey(5,1,event);">
+  <AREA shape="POLYGON" tabindex="1" ALT="Register form" origTitle="Register form" TITLE="Register form"  target="_top" COORDS="76,343,76,360,148,360,148,343,76,343" onmouseover="UpdateTooltip(this,5,1,event)" onfocus="UpdateTooltip(this,5,1,event)" onclick="return OnShapeClick(5,1,event);" onkeyup="OnShapeKey(5,1,event);">
+</MAP>
+
+
+</DIV>
+</body>
+</html>
